@@ -1,0 +1,103 @@
+/* =========================
+   SIGN IN PAGE
+========================= */
+
+.signin-container {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.signin-form {
+    width: 400px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.signin-form h2 {
+    color: #0066ff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.signin-form input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.signin-form input:focus {
+    border-color: #0066ff;
+}
+
+.sign_btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #0066ff;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.sign_btn:hover {
+    background-color: #0052cc;
+}
+
+.account-text {
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    color: #666;
+}
+
+.signup-link {
+    color: #0066ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
