@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <form action="/add_nurse" method="post">
+            <input type="text"
+            style="width: 400px;" 
+            placeholder="Enter programme name"
+            name="name_of_prog" 
+            id="prog">
+            <br>
+            <br>
+            <input
+            style="width: 400px;"
+             type="text"
+             placeholder="Enter minimum marks for Mathematics"
+             name = "mathematics">
+
+             <br>
+
+             <input type="text"
+             style="width: 400px;"
+             placeholder="Enter minimum marks for Mathematics"
+             name = "math_lit">
+            <br>
+
+            <input type="text"
+             style="width: 400px;"
+             placeholder="Enter minimum marks for life Science"
+             name = "life_Science">
+
+             <br>
+            <br>
+
+            <input type="text" 
+            style="width: 400px;"
+            placeholder="Enter minimum marks for English"
+            name="english">
+
+            <br>
+            <br>
+
+            <input type="text"
+            style="width: 400px;"
+             placeholder="Enter minimum required points"
+             name="req_points">
+             <br>
+            <br>
+
+             <button type="submit">Submit</button>
+        </form>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+    
+</body>
+</html>
